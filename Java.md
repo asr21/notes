@@ -14,3 +14,13 @@ Suppose it is costly to create a new object, we should use the FlyWeight design 
 
 [this article explains Flyweight design pattern](https://www.journaldev.com/1562/flyweight-design-pattern-java)
 
+### Database connection pooling
+
+So since a database connection is quite a hassle, pools are maintained which have all the connections. as a new client comes it can use one of the free connection. 
+
+[This stackoverflow post is nice](https://stackoverflow.com/questions/4041114/what-is-database-pooling)
+
+
+#### Character Arrays should be used for Storing Password instead of Strings
+
+Since strings are pooled, the Password will remain in the heap for a long time. Access to the heap can provide access to the password.
